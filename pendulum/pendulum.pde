@@ -1,6 +1,6 @@
 static class Point {
   float Xpos, Ypos, speed, theta, theta0, thetaAccel, thetaSpeed;
-  static int radius = 15;
+    static int radius = 15;
 
   Point(float initTheta) {
     theta0 = initTheta;
@@ -12,7 +12,7 @@ static class Point {
 }
 
 float theta0 = PI/2;
-float gravity = 0.005;
+float gravity = 0.0005;
 Point[] arrayPoint = new Point[5];
 int pendulumRadius = 100;
 
@@ -41,7 +41,7 @@ void draw() {
 
     arrayPoint[i].thetaAccel = -1*gravity*sin(arrayPoint[i].theta);
     arrayPoint[i].thetaSpeed += arrayPoint[i].thetaAccel;
-    arrayPoint[i].thetaSpeed *= 0.995;
+    arrayPoint[i].thetaSpeed *= 0.9955;
     arrayPoint[i].theta += arrayPoint[i].thetaSpeed;
 
     arrayPoint[i].Xpos = sin(arrayPoint[i].theta)*pendulumRadius;
