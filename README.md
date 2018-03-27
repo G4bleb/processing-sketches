@@ -1,4 +1,4 @@
-Trying out processing
-Done so far :
-Simple pendulum
-Double pendulum
+Trying out processing  
+  Done so far :  
+   - Simple pendulum  
+   - Double pendulum
